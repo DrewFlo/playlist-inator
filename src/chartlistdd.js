@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { listCharts } from './billboard-top-100'
+const { listCharts } = require('./billboard-top-100');
 
 class Chartlistdd extends Component {
 
@@ -21,7 +21,7 @@ class Chartlistdd extends Component {
         if (!this.state.chartcall) {
             listCharts((err, charts) => {
                 if (err) console.log(err)
-                this.setState({'chartlist' : (charts.filter((item, index ) => index < 5 ))})
+                this.setState({'chartlist' : (charts.filter((ele, index ) => index < 5 ))})
                 this.setState({'chartcall' : true})
             })
             }
