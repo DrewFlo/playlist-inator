@@ -1,8 +1,8 @@
 {
   "_from": "billboard-top-100@^2.5.7",
-  "_id": "billboard-top-100@2.5.7",
+  "_id": "billboard-top-100@2.5.9",
   "_inBundle": false,
-  "_integrity": "sha512-I/zH5/nJXqGWofxEn9ZfvM1OgYP/yhmKglKZKYhqWkQI31x3bsmvrmzggFKyikSjHmGHWBJl9HuCw+7r/AMyJA==",
+  "_integrity": "sha512-Xzx6THPElkktkIUyV906Dq9E1KqC8qYmbY7Ocxhs3sCuP9Lb99N+J39vmO1U5REFwN35EAvCrYkkXHf1rW8zsA==",
   "_location": "/billboard-top-100",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/billboard-top-100/-/billboard-top-100-2.5.7.tgz",
-  "_shasum": "80f23fd84a9c1c398acff8fdc41beb5a60064acb",
+  "_resolved": "https://registry.npmjs.org/billboard-top-100/-/billboard-top-100-2.5.9.tgz",
+  "_shasum": "fc6c51a3704b26d83eb5f50bd22ce35785dde211",
   "_spec": "billboard-top-100@^2.5.7",
-  "_where": "C:\\codebase\\react\\playlist-app\\src",
+  "_where": "C:\\codebase\\react\\playlist-app",
   "author": {
     "name": "Rishi Masand",
     "email": "masandrishi@gmail.com",
@@ -76,5 +76,5 @@
     "lint": "eslint billboard-top-100.js test/test.js",
     "test": "mocha --recursive"
   },
-  "version": "2.5.7"
+  "version": "2.5.9"
 }

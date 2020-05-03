@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import './App.css';
 import Chartlistdd from './chartlistdd'
 import Chartlistdetail from './chartlistdetail'
-
-const { getChart } = require('./billboard-top-100');
+import DatePicker from './datepicker'
+import BBHandler from './bbhandler'
+const { getChart } = require('billboard-top-100/billboard-top-100.js');
 
 class App extends Component {
   state = {
@@ -23,6 +24,8 @@ class App extends Component {
     console.log("charlistdetail_callback: ", value)
   }
 
+ 
+
   render() {
     let view = <h1>Playlist-inator!</h1>
 
@@ -30,8 +33,9 @@ class App extends Component {
       <div className="App">
         {view}
         <div className="billboard">
-          <Chartlistdd cbfunc={this.charlistdd_callback}/>
-          
+        <Chartlistdd cbfunc={this.charlistdd_callback}/>
+        <Chartlistdetail targetList = {this.state.selectedChartList} cbfunc={this.chartlistdetail_callback}/>
+        <DatePicker />
         </div>
       </div>
     );
@@ -39,6 +43,6 @@ class App extends Component {
 
   
 }
-//<Chartlistdetail targetList = {this.state.selectedChartList} cbfunc={this.chartlistdetail_callback}/>
+
 
 export default App;

@@ -9,7 +9,6 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
         "describe": true,
-        "moment" : true,
         "it": true
     },
     "parserOptions": {

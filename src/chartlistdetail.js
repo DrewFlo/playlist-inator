@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-const { getChart } = require('./billboard-top-100');
+const { getChart } = require('billboard-top-100/billboard-top-100.js');
 
 class Chartlistdetail extends Component {
 
@@ -17,7 +17,7 @@ class Chartlistdetail extends Component {
    
   detaillist = () => {
     if (!this.state.detailcall && this.props.targetList ) {
-      getChart('hot-100', '2016-08-27',(err, chart) => {
+      getChart('hot-100', '2020-04-04',(err, chart) => {
           if (err) console.log(err)
           console.log (chart)
           //this.setState({'chartlist' : (charts.filter((ele, index ) => index < 5 ))})

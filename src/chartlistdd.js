@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-const { listCharts } = require('./billboard-top-100');
+const { listCharts } = require('billboard-top-100/billboard-top-100.js');
 
 class Chartlistdd extends Component {
 
@@ -21,7 +21,8 @@ class Chartlistdd extends Component {
         if (!this.state.chartcall) {
             listCharts((err, charts) => {
                 if (err) console.log(err)
-                this.setState({'chartlist' : (charts.filter((ele, index ) => index < 5 ))})
+                console.log("yo", charts)
+                this.setState({'chartlist' : (charts.filter((ele, index ) => index < 3 ))})
                 this.setState({'chartcall' : true})
             })
             }
@@ -38,7 +39,7 @@ class Chartlistdd extends Component {
           <select value={this.state.listValue} onChange={this.handleChange}>
           <option value="DEFAULT" disabled>Select</option> 
           {this.state.chartlist.map((item, idx) => 
-            <option key={idx} value={item.name}>{item.name}</option>)}
+            <option key={idx} value={item.url}>{item.name}</option>)}
           </select>
       </div>
     );

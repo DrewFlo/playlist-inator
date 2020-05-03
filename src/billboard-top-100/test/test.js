@@ -44,7 +44,7 @@ describe('getChart()', () => {
 
         done();
       });
-    }).timeout(5000);
+    }).timeout(10000);
   });
 
   describe('get a current chart (hot-100)', () => {
@@ -85,7 +85,7 @@ describe('getChart()', () => {
 
         done();
       });
-    }).timeout(5000);
+    }).timeout(10000);
   });
 
   describe('get a current chart (latin-songs)', () => {
@@ -126,7 +126,7 @@ describe('getChart()', () => {
 
         done();
       });
-    }).timeout(5000);
+    }).timeout(10000);
   });
 
   describe('get a billboard-200 chart for 2019-10-01', () => {
@@ -142,7 +142,7 @@ describe('getChart()', () => {
           title: 'Quality Control: Control The Streets, Volume 2',
           artist: 'Various Artists',
           cover:
-           'https://assets.billboard.com/assets/1570131897/images/charts/bb-placeholder-new.jpg',
+           'https://www.billboard.com/assets/1582845518/images/charts/bb-placeholder-new.jpg',
           position: { positionLastWeek: 13, peakPosition: 3, weeksOnChart: 6 },
         }, 'no images sizes song is correct');
 
@@ -151,7 +151,7 @@ describe('getChart()', () => {
         assert.deepEqual(chart.songs[59], {
           rank: 60,
           title: 'Chronicle The 20 Greatest Hits',
-          artist: 'Creedence Clearwater Revival Featuring John Fogerty',
+          artist: 'Creedence Clearwater Revival',
           cover:
            'https://charts-static.billboard.com/img/1993/01/creedence-clearwater-revival-6ft-chronicle-the-20-greatest-hits-ttg.jpg',
           position: { positionLastWeek: 61, peakPosition: 22, weeksOnChart: 438 },
@@ -159,7 +159,7 @@ describe('getChart()', () => {
 
         done();
       });
-    }).timeout(5000);
+    }).timeout(10000);
   });
 });
 
@@ -181,6 +181,6 @@ describe('listCharts()', () => {
 
         done();
       });
-    }).timeout(5000);
+    }).timeout(10000);
   });
 });
